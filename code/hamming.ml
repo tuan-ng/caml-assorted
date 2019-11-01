@@ -8,8 +8,8 @@ let hamming n =
   | 1 -> true 
   | _ -> false 
   in if n = 1 then false else is_hamming n ;;
-
-(* If we treat 1 as a hamming number also then the code simplifies a bit *)
+  
+(* If we treat 1 as a Hamming number also then the code simplifies a bit *)
 
 let rec hamming = function 
     n when n mod 2 = 0 -> hamming (n/2)
