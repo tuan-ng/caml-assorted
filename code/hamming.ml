@@ -17,5 +17,3 @@ let rec hamming = function
   | n when n mod 5 = 0 -> hamming (n/5)
   | 1 -> true 
   | _ -> false ;;
-
-
